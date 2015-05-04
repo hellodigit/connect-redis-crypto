@@ -1,4 +1,17 @@
 
+2.3.0 / 2015-04-28
+==================
+
+  * add; `touch` / support `resave: false` [stuartpb]
+  * mod; package.json license [mikaturunen]
+
+2.2.0 / 2015-01-26
+==================
+
+  * add; option to disable setting a TTL [despairblue]
+  * mod; forward redis errors to session callbacks
+  * mod; pass error object on disconnect
+
 2.1.0 / 2014-08-29
 ==================
 
