@@ -2,6 +2,12 @@
 
 connect-redis-crypto (fork of connect-redis) is a Redis session store backed by [node_redis](http://github.com/mranney/node_redis), and is insanely fast :). Requires redis >= `2.0.0` for the _SETEX_ command.
 
+## Note from Nathaniel
+  I forked from https://github.com/jas-/connect-redis-crypto to have our redis session data encrypted. It had issues
+  because it overwrote some constants that made the module incompatible with other modules we had in Digit. I fixed
+  that issue and updated various portions of the encrypt and decrypt methods to use streams instead of using the legacy
+  update and digest methods that were causing us issues.
+
 ## Installation
 
     $ npm install connect-redis
